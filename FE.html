@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EC2 Response</title>
+
+  <!-- CSS -->
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f4f4f4;
+      font-family: Arial, sans-serif;
+    }
+
+    .box {
+      background: white;
+      padding: 30px 50px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      font-size: 28px;
+      font-weight: bold;
+      color: #2c3e50;
+      transition: transform 0.3s ease;
+    }
+
+    .box:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HTML -->
+  <div class="box" id="responseBox">
+    Response from EC2
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    const box = document.getElementById("responseBox");
+
+    box.addEventListener("click", () => {
+      alert("EC2 Server Responded Successfully!");
+    });
+  </script>
+
+</body>
+</html>
